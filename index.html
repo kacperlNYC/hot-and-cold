@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hot and Cold</title>
+    <script src="script.js"></script>
+    <link href="style.css" rel="stylesheet">
+</head>
+<body onload="init();">
+    <main>
+        <h1><span id="guessPlayer">50</span></h1>
+        <h2><span id="guessesLeft">5</span> Guesses Left</h2>
+
+        <div>
+            <button onclick="add(1);">Add 1</button>
+            <button onclick="add(5);">Add 5</button>
+            <button onclick="add(10);">Add 10</button>
+            <button onclick="add(25);">Add 25</button>
+    
+            <button onclick="remove(1);">Remove 1</button>
+            <button onclick="remove(5);">Remove 5</button>
+            <button onclick="remove(10);">Remove 10</button>
+            <button onclick="remove(25);">Remove 25</button>
+        </div>
+        <div>
+            <button onclick="commit();">Commit</button>
+            <button onclick="reset();">Reset</button>
+        </div>
+    </main>
+    
+
+    <table id="log">
+        <tr>
+            <th>Guess</th>
+            <th>Response</th>
+        </tr>
+    </table>
+    
+</body>
+</html>
