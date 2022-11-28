@@ -1,8 +1,0 @@
-main {
-    background-color: gainsboro;
-    border-radius: 15px;
-    padding: 15px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
