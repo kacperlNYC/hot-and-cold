@@ -1,3 +1,4 @@
+// Kacper Letowski Odd pd 7 8
 function init() {
     guess = 50;
     guesses = 5;

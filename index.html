@@ -1,3 +1,4 @@
+<!-- Kacper Letowski Odd pd 7 8-->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,7 +7,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hot and Cold</title>
     <script src="script.js"></script>
-    <link href="style.css" rel="stylesheet">
+    <style>
+        main {
+            margin: auto;
+            background-color: gainsboro;
+            border-radius: 15px;
+            padding: 15px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 50%;
+        }
+        table {
+            min-width: 400px;
+            margin: auto;
+            border: 2px solid black;
+            border-spacing: 0px;
+        }
+
+        table th{
+            border-right: 1px solid black;
+        }
+
+        th{
+            padding: 10px;
+        }
+    </style>
 </head>
 <body onload="init();">
     <main>
@@ -18,7 +44,8 @@
             <button onclick="add(5);">Add 5</button>
             <button onclick="add(10);">Add 10</button>
             <button onclick="add(25);">Add 25</button>
-    
+        </div>
+        <div>
             <button onclick="remove(1);">Remove 1</button>
             <button onclick="remove(5);">Remove 5</button>
             <button onclick="remove(10);">Remove 10</button>
@@ -30,6 +57,7 @@
         </div>
     </main>
     
+    <br>
 
     <table id="log">
         <tr>
